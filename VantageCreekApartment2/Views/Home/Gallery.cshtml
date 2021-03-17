@@ -1,0 +1,99 @@
+﻿
+
+@{
+    ViewBag.Title = "Gallery";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/gallery.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/style1.css">
+    <meta charset="utf-8">
+    <title>Vantage Creek Apartments | Gallery</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="vantagehome">
+            <p>@Html.ActionLink("Vantage Creek Apartments", "Index")</p>
+        </div>
+        <div id="navy">
+            @Html.ActionLink("FLOORPLANS", "Floorplans")
+            @Html.ActionLink("GALLERY", "gallery")
+            @Html.ActionLink("AMENITIES", "amenities")
+            @Html.ActionLink("RESIDENTS", "resident")
+            @Html.ActionLink("CONTACT", "contact")
+            @Html.ActionLink("APPLY NOW", "apply")
+        </div>
+    </div>
+    <section class="gallerymain">
+        <p><center><h1>Vantage Creek Apartments Gallery</h1></center></p>
+    </section>
+    <section>
+        <center>
+            <div class="gallerypad">
+                <div class="gallery">
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/bathroom1.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/bathroom2.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/bathroom3.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/bathroom4.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/bedroom1.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/bedroom2.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/bedroom3.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/bedroom4.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/kitchen1.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/kitchen2.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/kitchen3.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/kitchen4.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/kitchen5.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/kitchen6.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/kitchen7.jpg"
+                         height="350" width="350">
+
+                    <img src="https://creekimages.blob.core.windows.net/aptgallery/kitchen8.jpg"
+                         height="350" width="350">
+                </div>
+            </div>
+        </center>
+    </section>
+    <footer class="footer">
+        <br>Office Hours
+        <br><br>Mon - Fri: 9AM - 5PM
+        <br>Sat: 10AM - 3PM
+        <br>Sun: Closed
+        <br><br>Contact Us
+        <br><br>(555)-555-5555
+        <br>1234 Vantage Street
+        <br>Houston, TX 77080
+        <br><br>&copy Vantage Creek
+    </footer>
+</body>
+</html>

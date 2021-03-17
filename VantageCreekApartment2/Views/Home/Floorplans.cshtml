@@ -1,0 +1,188 @@
+﻿
+@{
+    ViewBag.Title = "Floorplans";
+}
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Vantage Creek Apartments | Floorplans</title>
+
+    <link type="text/css" rel="stylesheet" href="~/Content/style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .floorplansmain {
+            background-image: url(https://creekimages.blob.core.windows.net/images/floorplans.jpg);
+            min-height: 600px;
+            box-sizing: border-box;
+            z-index: -1;
+            opacity: 0.6;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+        }
+
+
+
+        h1 {
+            margin: 0;
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .floorimages {
+            height: 250px;
+            width: 250px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 40px;
+            overflow: auto;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+        }
+
+
+        hr {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div id="navbar">
+        <div id="vantagehome">
+            <p>@Html.ActionLink("Vantage Creek Apartments", "Index")</p>
+        </div>
+        <div id="navy">
+            @Html.ActionLink("FLOORPLANS", "Floorplans")
+            @Html.ActionLink("GALLERY", "gallery")
+            @Html.ActionLink("AMENITIES", "amenities")
+            @Html.ActionLink("RESIDENTS", "resident")
+            @Html.ActionLink("CONTACT", "contact")
+            @Html.ActionLink("APPLY NOW", "apply")
+        </div>
+    </div>
+
+
+
+
+    <section class="floorplansmain">
+        <p>
+            <h1>Vantage Creek Apartments <center>Floorplans</center></h1>
+        </p>
+    </section>
+
+    <section class="floorplans1">
+        <center>
+            <div class="regularfont">
+
+                <p>
+                    <img class="floorimages" src="https://creekimages.blob.core.windows.net/images/a1.jpg" alt="A1">
+                    <ul>
+                        AVAILABLE | A1
+                        <li>1 BED</li>
+                        <li>1 BATH</li>
+                        <li>PRICE: $1000</li>
+                        <li>712-776 SQ FT</li>
+                        <li>DEPOSIT: $250</li>
+                    </ul>
+                </p>
+
+
+                <hr>
+
+                <p>
+                    <img class="floorimages" src="https://creekimages.blob.core.windows.net/images/b1.jpg" alt="B1">
+                    <ul>
+                        AVAILABLE | B1
+                        <li>2 BED</li>
+                        <li>2 BATH</li>
+                        <li>PRICE: $1300</li>
+                        <li>1014-1101 SQ FT</li>
+                        <li>DEPOSIT: $250</li>
+                    </ul>
+                </p>
+
+                <hr>
+
+                <p>
+                    <img class="floorimages" src="https://creekimages.blob.core.windows.net/images/b1a.jpg" alt="B1A">
+                    <ul>
+                        AVAILABLE | B1A
+                        <li>2 BED</li>
+                        <li>2 BATH</li>
+                        <li>PRICE: $1300</li>
+                        <li>1101 SQ FT</li>
+                        <li>DEPOSIT: $250</li>
+                    </ul>
+                </p>
+
+                <hr>
+
+                <p>
+                    <img class="floorimages" src="https://creekimages.blob.core.windows.net/images/c1.jpg" alt="C1">
+                    <ul>
+                        AVAILABLE | C1
+                        <li>3 BED</li>
+                        <li>2 BATH</li>
+                        <li>PRICE: $1700</li>
+                        <li>1300 SQ FT</li>
+                        <li>DEPOSIT: $250</li>
+                    </ul>
+                </p>
+
+                <hr>
+
+                <p>
+                    <img class="floorimages" src="https://creekimages.blob.core.windows.net/images/c2.jpg" alt="C2">
+                    <ul>
+                        AVAILABLE | C2
+                        <li>3 BED</li>
+                        <li>2 BATH</li>
+                        <li>PRICE: $1700</li>
+                        <li>1293-1440 SQ FT</li>
+                        <li>DEPOSIT: $250</li>
+                    </ul>
+                </p>
+                <br>
+            </div>
+        </center>
+    </section>
+
+    <footer class="footer">
+
+        <br>Office Hours
+        <br><br>Mon - Fri: 9AM - 5PM
+        <br>Sat: 10AM - 3PM
+        <br>Sun: Closed
+
+        <br><br>Contact Us
+        <br><br>(555)-555-5555
+        <br>1234 Vantage Street
+        <br>Houston, TX 77080
+        <br><br>&copy Vantage Creek
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
+

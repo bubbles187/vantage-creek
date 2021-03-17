@@ -1,0 +1,71 @@
+﻿@model VantageCreekApartment2.Models.Account
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Vantage Creek Apartments | Resident Portal</title>
+    <link type="text/css" rel="stylesheet" href="~/Content/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+    {
+        <div class="loginbox">
+            <center>
+                <h1>Vantage Creek Apartments</h1>
+                <div class="regulartext">
+                    Welcome! Register here or through the leasing office to gain access to the resident portal
+                    <p>If you're already registered, just enter your username and password to sign in.</p>
+                </div>
+                <h2>Resident Portal</h2>
+                <form>
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+                    @if (@ViewBag.Message != null)
+                    {
+                        <div style="border: 1px solid red">
+                            @ViewBag.Message
+                        </div>
+                    }
+                    <table>
+                        <tr>
+                            <td>@Html.LabelFor(a => a.Email)</td>
+                            <td style="color:black">@Html.TextBoxFor(a => a.Email)</td>
+                            <td>@Html.ValidationMessageFor(a => a.Email)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @Html.LabelFor(a => a.Password)
+                            </td>
+                            <td style="color:black">
+                                @Html.PasswordFor(a => a.Password)
+                            </td>
+                            <td>
+                                @Html.ValidationMessageFor(a => a.Password)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Login" />
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <div>
+                        @Html.ActionLink("Forgot your password?", "Forgot")
+                    </div>
+                    <div>
+                        @Html.ActionLink("Create an account", "Resident")
+                    </div>
+                </form>
+            </center>
+        </div>
+    }
+</body>
+</html>
+
+

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Forgot";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Forgot</title>
+    <link type="text/css" rel="stylesheet" href="~/Content/forgot.css">
+</head>
+<body>
+    <div class="loginbox">
+        <center>
+            <form>
+                <h2>Forgot Password</h2>
+                <div class="regulartext">
+                    Please enter your email address associated with your resident portal account,
+                    and you will be sent an email with instructions on how to reset your password.
+                </div>
+                <div class="regulartext">
+                    <p>
+                        Email
+                        <input type="text" name="emailadd" placeholder="Enter Email Address" style="color:black">
+                    </p>
+                    <input type="submit" name="" value="Reset Password"><br>
+                </div>
+                <div>
+                    @Html.ActionLink("Back to Home Page", "Index")
+                </div>
+            </form>
+        </center>
+    </div>
+</body>
+</html>
+

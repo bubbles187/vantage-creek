@@ -1,0 +1,148 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Yusei Magic', 'Barlow Condensed', 'Lato', sans-serif;
+}
+
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #366266;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    text-align: right;
+}
+
+#navy {
+    float: right;
+}
+
+#vantagehome {
+    float: left;
+    font-size: 21px;
+    color: white;
+    padding-left: 30px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+    #vantagehome a {
+        display: block;
+        color: #f2f2f2;
+        text-decoration: none;
+    }
+
+        #vantagehome a:hover {
+            cursor: pointer;
+            color: #94C2C7;
+            text-decoration: none;
+        }
+
+/* Navbar links */
+#navy a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 30px;
+    text-decoration: none;
+}
+
+    #navy a:hover {
+        cursor: pointer;
+        color: #94C2C7;
+        text-decoration: underline;
+    }
+
+.regularfont {
+    color: #575252;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #234043;
+    background-size: cover;
+    min-height: 10px;
+    margin-bottom: 0;
+    margin: 0;
+    color: white;
+    font-size: 19px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+
+.contact {
+    background-image: url(https://creekimages.blob.core.windows.net/images/contact.jpg);
+    min-height: 600px;
+    box-sizing: border-box;
+    z-index: -1;
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-size: cover;
+    color: #fff;
+}
+
+.pageHeading {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.floorplansmain {
+    background-image: url(floorplancouch.jpeg);
+    min-height: 600px;
+    box-sizing: border-box;
+    z-index: -1;
+    opacity: 0.6;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: cover;
+    color: #fff;
+}
+
+.floorplans1 {
+    background: #f5f5f5;
+    min-height: 1500px;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-size: cover;
+    color: #fff;
+}
+
+
+    .floorplansmain p, .floorplans1 p, .gallerymain p {
+        margin: 0;
+        font-size: 50px;
+        font-weight: 400px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+@media(max-width:508px) {
+    .main, .floorplans1, #navbar {
+        background-attachment: scroll;
+    }
+}

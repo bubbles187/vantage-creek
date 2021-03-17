@@ -1,0 +1,113 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Yusei Magic', 'Barlow Condensed', 'Lato', sans-serif;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #366266;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    text-align: right;
+}
+
+#navy {
+    float: right;
+}
+
+#vantagehome {
+    float: left;
+    font-size: 21px;
+    color: white;
+    padding-left: 30px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+    #vantagehome a {
+        display: block;
+        color: #f2f2f2;
+        text-decoration: none;
+    }
+
+        #vantagehome a:hover {
+            cursor: pointer;
+            color: #94C2C7;
+            text-decoration: none;
+        }
+
+/* Navbar links */
+#navy a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 30px;
+    text-decoration: none;
+}
+
+    #navy a:hover {
+        cursor: pointer;
+        color: #94C2C7;
+        text-decoration: underline;
+    }
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallerypad {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+}
+
+.gallery img {
+    padding: 5px;
+    transition: 1s;
+}
+
+    .gallery img:hover {
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+
+.gallerymain {
+    background-image: url(https://creekimages.blob.core.windows.net/images/amenities.jpg);
+    min-height: 600px;
+    box-sizing: border-box;
+    z-index: -1;
+    opacity: 0.6;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: cover;
+    color: #fff;
+    position: center;
+}
+
+.footer {
+    background-color: #234043;
+    background-size: cover;
+    min-height: 10px;
+    margin-bottom: 0;
+    margin: 0;
+    color: white;
+    font-size: 19px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    padding-bottom: 25px;
+}

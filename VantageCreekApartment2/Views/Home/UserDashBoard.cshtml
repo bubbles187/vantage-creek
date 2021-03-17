@@ -1,0 +1,28 @@
+﻿@model VantageCreekApartment2.Models.Account
+
+@{
+    ViewBag.Title = "UserDashBoard";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserDashBoard</title>
+</head>
+<body>
+    <div>
+        <h1>User DashBoard</h1>
+        @if (Session["Email"] != null)
+        {
+            <p>Welcome @Session["Email"].ToString()</p>
+        }
+    </div>
+    <div>
+        @Html.ActionLink("Back to Home Page", "Index")
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vantage Creek Apartments</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/home.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/style1.css">
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <!--the div navbar defines the menu-->
+    <div id="navbar">
+        <div id="vantagehome">
+           <p>@Html.ActionLink("Vantage Creek Apartments", "Index")</p>
+        </div>
+        <div id="navy">
+            @Html.ActionLink("FLOORPLANS", "Floorplans")
+            @Html.ActionLink("GALLERY", "Gallery")
+            @Html.ActionLink("AMENITIES", "Amenities")
+            @Html.ActionLink("RESIDENTS", "Resident")
+            @Html.ActionLink("CONTACT", "Contact")
+            @Html.ActionLink("APPLY NOW", "apply")
+        </div>
+    </div>
+
+    <!--this is the image on the front page-->
+    <div class="main_home_image">
+        <img src="https://creekimages.blob.core.windows.net/images/apt2.jpg" alt="Apartment">
+        <p>Welcome to <br>Vantage Creek Apartments</p>
+    </div>
+
+    <!--this is the second image of Houston below the first image-->
+    <div class="intro">
+        <img src="https://creekimages.blob.core.windows.net/images/texas.jpg" alt="Texas">
+        <div class="intro_content">
+            <p>
+                Located in Houston, Texas,
+                Vantage Creek Apartments is surrounded by everything Houston has to offer - shopping, parks, entertainment,
+                dining, and a variety of other options.
+            </p>
+        </div>
+    </div>
+
+    <!--the div grid-container contains the content for the gallery and floorplans links-->
+    <div class="grid-container">
+        <div class="grid-child_floor_plans">
+            <h1>Floor Plans</h1>
+            <p>
+                Do you have any expectations or specific needs for the perfect layout?
+                Come check out the various floor plans!
+            </p>
+            <!--<button src="floorplans.html" class="side-by-side">Floor plans</button>-->
+            @Html.ActionLink("Floorplans", "Floorplans")
+        </div>
+
+        <div class="grid-child_gallery">
+            <h1>Gallery</h1>
+            <p>Browse our photo gallery of apartments from kitchens to living rooms to bedrooms.</p>
+            <!--<button src="gallery.html" class="side-by-side">Gallery</button>-->
+            @Html.ActionLink("Gallery", "gallery")
+        </div>
+    </div>
+
+    <!--this is the div for the sign up link to the Residents page-->
+    <div class="signup_content">
+        <p>Don't have an account yet? Sign up now to access purchase features.</p>
+        <!--<button class="signup_button">Sign up</button>-->
+        @Html.ActionLink("Sign Up", "Resident")
+    </div>
+
+    <footer class="footer">
+        <br>Office Hours
+        <br><br>Mon - Fri: 9AM - 5PM
+        <br>Sat: 10AM - 3PM
+        <br>Sun: Closed
+        <br><br>Contact Us
+        <br><br>(555)-555-5555
+        <br>1234 Vantage Street
+        <br>Houston, TX 77080
+        <br><br>&copy Vantage Creek
+    </footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,203 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Yusei Magic', 'Barlow Condensed', 'Lato', sans-serif;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #366266;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    text-align: right;
+    z-index: 1;
+}
+
+#navy {
+    float: right;
+}
+
+#vantagehome {
+    float: left;
+    font-size: 21px;
+    color: white;
+    padding-left: 30px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+    #vantagehome a {
+        display: block;
+        color: #f2f2f2;
+        text-decoration: none;
+    }
+
+        #vantagehome a:hover {
+            cursor: pointer;
+            color: #94C2C7;
+            text-decoration: none;
+        }
+
+/* Navbar links */
+#navy a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 30px;
+    text-decoration: none;
+}
+
+    #navy a:hover {
+        cursor: pointer;
+        color: #94C2C7;
+        text-decoration: underline;
+    }
+
+.main_home_image {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+    .main_home_image img {
+        width: 100%;
+        display: block;
+    }
+
+    .main_home_image p {
+        position: absolute;
+        padding-bottom: 1400px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        font-weight: bolder
+    }
+
+.intro {
+    text-align: center;
+    color: white;
+    font-size: 23px
+}
+
+
+.intro_content p {
+    position: absolute;
+    padding-bottom: 630px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    color: black;
+    font-weight: bolder;
+}
+
+.intro img {
+    width: 100%;
+    opacity: 0.5;
+    display: block;
+}
+
+.signup_content {
+    background-color: gray;
+    width: 100%;
+    height: 300px;
+    top: 200%;
+    text-align: center;
+    padding-top: 70px;
+    display: block;
+    margin-top: 30px;
+}
+
+    .signup_content a {
+        background-color: black;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .signup_content p {
+        font-size: 30px;
+        color: white;
+    }
+
+    .signup_content a {
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+
+        .signup_content a:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+    .grid-container a {
+        background-color: black;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+.grid-child_floor_plans a {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+    .grid-child_floor_plans a:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+.grid-container p {
+    font-size: 20px;
+}
+
+.grid-child_floor_plans {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 90px;
+    margin-right: 50px;
+}
+
+.grid-child_gallery {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 90px;
+    margin-right: 50px;
+}
+
+    .grid-child_gallery a {
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+
+        .grid-child_gallery a:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+.footer {
+    background-color: #234043;
+    background-size: cover;
+    min-height: 10px;
+    margin-bottom: 0;
+    margin: 0;
+    color: white;
+    font-size: 19px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    padding-bottom: 25px;
+}

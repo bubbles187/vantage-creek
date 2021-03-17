@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Apply";
+}
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Vantage Creek Apartments | Apply Now</title>
+    <link type="text/css" rel="stylesheet" href="~/Content/style1.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="vantagehome">
+            <p>@Html.ActionLink("Vantage Creek Apartments", "Index")</p>
+        </div>
+        <div id="navy">
+            @Html.ActionLink("FLOORPLANS", "Floorplans")
+            @Html.ActionLink("GALLERY", "gallery")
+            @Html.ActionLink("AMENITIES", "amenities")
+            @Html.ActionLink("RESIDENTS", "resident")
+            @Html.ActionLink("CONTACT", "contact")
+            @Html.ActionLink("APPLY NOW", "apply")
+        </div>
+    </div>
+   
+    <iframe src="https://creekimages.blob.core.windows.net/pdffile/application.pdf" width="100%" height="1000px"></iframe>
+</body>
+</html>
+

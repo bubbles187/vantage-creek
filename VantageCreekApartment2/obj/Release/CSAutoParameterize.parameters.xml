@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Registration-Web.config Connection String" description="Registration Connection String used in web.config by the application to access the database." defaultValue="data source=vantagecreekapartmentdbserver.database.windows.net;initial catalog=VantageCreekApartment_db;user id=danghuy000;password=6uzvafm!;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Huy\ Dang\\Desktop\\VantageCreekApartment2\\VantageCreekApartment2\\VantageCreekApartment2\\VantageCreekApartment2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Registration']/@connectionString" />
+  </parameter>
+</parameters>
